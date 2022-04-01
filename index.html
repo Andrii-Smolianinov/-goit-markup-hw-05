@@ -12,81 +12,115 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
-<body> 
+<body>
     <header class="header">
         <div class="container">
-            <nav class="nav" ><a class="logohead" href="/"><span class="webhead">Web</span><span class="studiohead">Studio</span></a>
-            <ul class="main-navigation">
-                <li class="nav-list"><a class="nav-item" href="./index.html">Студия</a></li>
-                <li class="nav-list"><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
-                <li class="nav-list"><a class="nav-item" href="">Контакты</a></li>
-            </ul>
+            <nav class="nav"><a class="logohead" href="/">
+                <span class="webhead">Web</span><span class="studiohead">Studio</span></a>
+                <ul class="main-navigation">
+                    <li class="nav-list"><a class="nav-item" href="./index.html">Студия</a></li>
+                    <li class="nav-list"><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-list"><a class="nav-item" href="">Контакты</a></li>
+                </ul>
             </nav>
             <ul class="main-contacts">
-                <li class="contacts-list"><a class="contacts-item" href="mailto:info@devstudio.com"><svg class="mail-icon"><use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
-                <li class="contacts-list"><a class="contacts-item" href="tel:+380961111111"><svg class="phone-icon">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                </svg>+380961111111</a></li>
+                <li class="contacts-list">
+                    <a class="contacts-item" href="mailto:info@devstudio.com">
+                        <svg class="mail-icon"><use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts-list"><a class="contacts-item" href="tel:+380961111111">
+                    <svg class="phone-icon"><use href="./images/icons.svg#icon-phone"></use></svg>+380961111111</a>
+                </li>
             </ul>
         </div>
     </header>
-    
-    <main><!--<Уникальный контент страницы>-->
-        <section class="banner overlay"><!--Блок Баннер-->
+    <main>
+            <!--<Уникальный контент страницы>-->
+        <section class="banner overlay">
+                <!--Блок Баннер-->
             <div class="container bnnr">
-            <h1 class="banner-tittle">Эффективные решения <br> для вашего бизнеса</h1>
-            <button class="banner-button" type="button">Заказать услугу</button>
+                <h1 class="banner-tittle">Эффективные решения <br> для вашего бизнеса</h1>
+                <button class="banner-button" type="button" data-open-modal>Заказать услугу</button>
+    <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum odio maiores laudantium quod doloremque at inventore dolorum rem laborum, aperiam eos soluta tenetur suscipit eius pariatur consectetur! Mollitia voluptatum deleniti voluptate sunt possimus dolorem quasi doloremque quibusdam animi. Ex in, debitis repellat excepturi alias earum optio. A tempore delectus at.</p>
+            <button class="banner-button-close" type="button" data-close-modal>x</button>
+        </div>
+    </div>
             </div>
         </section>
-        <section class="peculiarities section"><!--Блок со списком особенностей-->
+        <section class="peculiarities section">
+                <!--Блок со списком особенностей-->
             <div class="container">
-            <h2 hidden class="peculiarities-maintittle">Особенности компании</h2>
-            <ul class="peculiarities-list">
-                <li class="peculiarities-items">
-                    <div class="peculiarities-icons">
-                        <svg class="peculiarities-icon antena"><use href="./images/icons.svg#icon-antena"></use></svg>
-
-                    </div>
-                    <h3 class="peculiarities-tittle">внимание к деталям</h3>
-                    <p class="peculiarities-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li class="peculiarities-items">
-                    <div class="peculiarities-icons">
-                        <svg class="peculiarities-icon clock">
-                            <use href="./images/icons.svg#icon-clock"></use>
-                        </svg>
-                    </div>
-                    <h3 class="peculiarities-tittle">пунктуальность</h3>
-                    <p class="peculiarities-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="peculiarities-items">
-                    <div class="peculiarities-icons">
-                        <svg class="peculiarities-icon comp">
-                            <use href="./images/icons.svg#icon-comp"></use>
-                        </svg>
-                    </div>
-                    <h3 class="peculiarities-tittle">планирование</h3>
-                    <p class="peculiarities-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="peculiarities-items">
-                    <div class="peculiarities-icons">
-                        <svg class="peculiarities-icon cosm">
-                            <use class="cosmic" href="./images/icons.svg#icon-cosm"></use>
-                        </svg>
-                    </div>
-                    <h3 class="peculiarities-tittle">современные технологии</h3>
-                    <p class="peculiarities-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+                <h2 hidden class="peculiarities-maintittle">Особенности компании</h2>
+                <ul class="peculiarities-list">
+                    <li class="peculiarities-items">
+                        <div class="peculiarities-icons">
+                            <svg class="peculiarities-icon antena">
+                                <use href="./images/icons.svg#icon-antena"></use>
+                            </svg>
+                        </div>
+                        <h3 class="peculiarities-tittle">внимание к деталям</h3>
+                        <p class="peculiarities-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="peculiarities-items">
+                        <div class="peculiarities-icons">
+                            <svg class="peculiarities-icon clock">
+                                <use href="./images/icons.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="peculiarities-tittle">пунктуальность</h3>
+                        <p class="peculiarities-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="peculiarities-items">
+                        <div class="peculiarities-icons">
+                            <svg class="peculiarities-icon comp">
+                                <use href="./images/icons.svg#icon-comp"></use>
+                            </svg>
+                        </div>
+                        <h3 class="peculiarities-tittle">планирование</h3>
+                        <p class="peculiarities-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="peculiarities-items">
+                        <div class="peculiarities-icons">
+                            <svg class="peculiarities-icon cosm">
+                                <use class="cosmic" href="./images/icons.svg#icon-cosm"></use>
+                            </svg>
+                        </div>
+                        <h3 class="peculiarities-tittle">современные технологии</h3>
+                        <p class="peculiarities-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="work section"><!--<Блок Чем мы занимаемся-->
+       <section class="work section"><!--<Блок Чем мы занимаемся-->
             <div class="container wrk">
-            <h2 class="work-tittle">Чем мы занимаемся</h2>
-            <ul class="work-list">
-                <li class="work-items"><img src="./images/work-a-min.jpg" alt="верстка сайтов" width="370" height="294"></li>
-                <li class="work-items"><img src="./images/work-b-min.jpg" alt="програмное обеспечение" width="370" height="294"></li>
-                <li class="work-items"><img src="./images/work-c-min.jpg" alt="графический дизайн" width="370" height="294"></li>
+                <h2 class="work-tittle">Чем мы занимаемся</h2>
+                <ul class="work-list">
+                    <li class="work-items">
+                        <div class="work-thumb">
+                            <img src="./images/work-a-min.jpg" alt="Десктопные приложения" width="370" height="294">
+                            <div class="work-img-thumb">
+                                <h3 class="work-txt-thumb">Десктопные приложения</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="work-items">
+                        <div class="work-thumb">
+                             <img src="./images/work-b-min.jpg" alt="Мобильные приложения" width="370" height="294">
+                            <div class="work-img-thumb">
+                                <h3 class="work-txt-thumb">Мобильные приложения</h3>
+                            </div>
+                     </div>
+                    </li>
+                    <li class="work-items">
+                        <div class="work-thumb">
+                            <img src="./images/work-c-min.jpg" alt="Дизайнерские решения" width="370" height="294">
+                            <div class="work-img-thumb">
+                                <h3 class="work-txt-thumb">Дизайнерские решения</h3>
+                            </div>
+                        </div>
+                    </li>
             </ul>
             </div>
         </section>
@@ -271,8 +305,6 @@
                         </ul>
                     </address>
                 </div>
-            
-        
                 <div class="footer_flex-item">
                     <h2 class="footer_socials-tittle">Присоединяйтесь</h2>
                     <ul class="footer_socials-list">
@@ -308,6 +340,27 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
+    <script>
+        const refs = {
+            openModalBtn: document.querySelector("[data-open-modal]"),
+            closeModalBtn: document.querySelector("[data-close-modal]"),
+            backdrop: document.querySelector("[data-backdrop]"),
+            };
+
+            refs.openModalBtn.addEventListener("click", toggleModal);
+            refs.closeModalBtn.addEventListener("click", toggleModal);
+
+            refs.backdrop.addEventListener("click", logBackdropClick);
+
+            function toggleModal() {
+                refs.backdrop.classList.toggle("is-hidden");
+            }
+
+            function logBackdropClick() {
+                console.log("Это клик в бедроп");
+            }
+    </script>
+<!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
